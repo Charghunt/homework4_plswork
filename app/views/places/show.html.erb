@@ -4,19 +4,20 @@
   <h2><%= @place["name"] %></h2>
   
  
-
  <div class="row">
       <div class="col-sm-9">
         
         <div class="col-sm-3 text-end">
-        <a href="/posts/new/" class="btn btn-success">New Post</a>
-   
+          
+<p>
+  <a href="/posts/new?place_id=<%= @place["id"] %>" class="btn btn-success">New Post</a>
+</p>
+
       </div>
       <div class="col-sm-3 text-end">
         <a href="/places" class="btn btn-primary">Back to All Places</a>
       </div>
     </div>
-
 
    <div class="container text-center">
       <div class="row">
